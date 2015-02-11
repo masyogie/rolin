@@ -1,0 +1,42 @@
+/*
+rolin2.css
+desc	: style for radio.loenpia.net
+ver	: 2011.b
+author	: mizan | mizanul.net
+*/
+
+* {
+	border: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #000000;
+	font: 1em Helvetica, "Lucida Sans Unicode", Arial, Tahoma, sans-serif;
+	height: 100%;
+	padding: 0;
+	text-align: center;    
+}
+
+a, a:link, a:visited, b {
+	color: #ef7e20;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: #303090;
+	text-decoration: underline;
+}
+#radio {
+	font-size: small;
+    color:#7093C6;
+    text-decoration: none;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="Ple-Q" />
+
+	<title>Ro_Lin</title>
+</head>
+
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">
+function nowplaying(){ 
+  $.ajax({
+  timeout: 10000,
+  url: "/rolin.php", 
+  cache: false,
+  success: function(html){ 
+   $("#nowplaying").html(html); 
+  }
+ }); 
+}
+nowplaying();
+setInterval( "nowplaying()", 10000 ); 
+</script>
+<div id="nowplaying"></div>
+
+</body>
+</html>
